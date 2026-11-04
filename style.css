@@ -1,0 +1,518 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+list-style: none;
+text-decoration: none;
+}
+
+/* ===============================================================================
+NAV PRINCIPAL / ORGANISATION
+=============================================================== */
+
+main nav{
+    display: flex;
+    width: 100%;
+    height: 9vh;
+    padding: 30px;
+    background-color: rgb(0, 140, 255);
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+
+main nav .Listes-Container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#hamburger-menu{
+    display: none;
+}
+
+nav .Listes-Container .Listes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* padding: 6px; */
+    font-weight: 700;
+    color: white;
+}
+
+nav .Listes-Container .button-connexion{
+    background-color: rgb(241, 134, 10);
+    width:70px;
+    height: 25px;
+    border-radius: 6px;
+    border: 1px solid white;
+    cursor: pointer;
+    
+}
+
+/* ===============================================================================
+SECTION PRINCIPAL / ORGANISATION
+=============================================================== */
+
+main .section-Accueil{
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    padding: 30px;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(./profil/2.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+main .section-Accueil .Texte-Accueil-1{
+    font-size: 5vh;
+}
+
+main .section-Accueil .Texte-Accueil-2{
+    font-weight: 500;
+    font-size: 110px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:  rgb(255, 255, 255);
+}
+
+main .section-Accueil .Button-Accueil-1{
+ width: 70px;
+ height: 25px; 
+ border-radius: 6px;  
+ border: none;
+ cursor: progress;
+}
+main .section-Accueil .Button-Accueil-2{
+    width: 70px;
+    height: 25px; 
+    border-radius: 6px;  
+    border: none;
+    background-color: rgb(0, 140, 255);
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+
+
+
+/* ================================================================================
+            organisation des elements de la section presentation
+=====================================================================  */
+
+main .Section-Presentation{
+    width: 100%;
+    height: 91vh;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: center;
+
+}
+
+
+
+
+
+main .Section-Presentation .Presentation-item-1{
+    width: 40%;
+    height: 88%;
+    background-image: url(./profil/10.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 10px;
+    gap: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 10px 0px rgb(44, 53, 59);
+    display: flex;
+    font-weight: 300;
+    font-size: 17px;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 250px;
+    padding-right: 50px;
+}
+
+.Section-Presentation .Presentation-item-1 .Button-Presentation-3{
+    width: 90px;
+    height: 30px; 
+    border-radius: 6px;  
+    border: none;
+    background-color: rgb(0, 140, 255);
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.Section-Presentation .Presentation-item-1 h4{
+    color: rgb(0, 140, 255);
+    font-size: 30px;
+    
+}
+
+main .Section-Presentation .Presentation-item-2{
+    /* border: 1px solid black; */
+    width: 49%;
+    height: 99%;
+    padding-left: 30px;
+}
+
+
+/* ================================================================================
+organisation des elements de la section services
+===================================================================== */
+
+main .Section-Services{
+    width: 100%;
+    height: 91vh;
+    padding: 36px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* border: 1px solid black; */
+    gap: 5rem;
+    background: #f9f9f9f9;
+}
+
+.Section-Services .Service-item-2{
+   /* border: 1px solid black; */
+   display: flex;
+   flex-direction: column;
+   gap:10px;
+    
+  
+}
+
+.Section-Services .Service-item-2 .Service-item-2-1{
+width: 100%;
+height:20%;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+/* border: 1px solid black; */
+
+}
+
+.Service-item-2 .Service-item-2-1 .img{
+    width: 90px;
+    height: 90px;
+    border-radius: 1rem;
+}
+
+
+/* ====================================================================
+ORGANISSTION DES ELEMENTS DE LA SECTION REALISATION
+===================================================================== */
+
+
+main .section-Realisations{
+    width: 100%;
+    height: 90vh;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+
+/* ========Stylisation des elements de la section realisation item-1======================== */
+
+main .section-Realisations .Realisation-item-1{
+/* border: 1px solid black; */
+display: grid;
+grid-template-columns: 2fr 1fr;
+grid-template-rows: 1fr 1fr;
+gap: 7px;
+padding-top: 30px;
+padding-left: 30px;
+
+}
+
+.Realisation-item-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.Realisation-item-1 .image-a{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.616);
+    border-radius: 10px;
+}
+.Realisation-item-1 .image-b{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.616);
+     border-radius: 10px;
+}
+.Realisation-item-1 .image-c{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.616);
+    border-radius: 10px;
+}
+
+
+/* ========Stylisation des elements de la section realisation item-2======================== */
+
+main .section-Realisations .Realisation-item-2{
+padding-top: 30px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.section-Realisations .Realisation-item-2 button{
+    width: 90px;
+    height: 30px; 
+    border-radius: 6px;  
+    border: none;
+    background-color: rgb(0, 140, 255);
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+
+
+/* ======================================================================
+            FOOTER
+========================================================= */
+
+main footer{
+    width: 100%;
+    height: 40vh;
+    background-color: rgba(78, 83, 83, 0.877);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    gap: 20px;
+    padding: 30px;
+}
+
+main footer .footer-item-1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+    
+}
+
+main footer .footer-item-2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    color: white;
+    font-size: 20px;  
+}
+
+main footer .footer-item-3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    color: white;
+    font-size: 20px;  
+}
+
+main footer .footer-item-4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    color: white;
+    font-size: 20px;  
+}
+
+
+/* ======================================================================
+            MEDIA QUERIES
+===================================================================== */ 
+
+
+
+/* ==========Pour format telephone Portale========= */
+@media(max-width:600px) {
+
+    main nav{
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    nav .Listes-Container .Listes{
+    display: none;
+}
+
+    #hamburger-menu{
+    display: flex;
+
+}
+
+main .section-Accueil .Texte-Accueil-2{
+    font-weight: 400;
+    font-size: 70px;
+    
+}
+
+
+nav .Listes-Container .button-connexion{
+  display: none;
+}
+
+main .section-Accueil{
+  
+    padding: 20px;
+}
+
+main .Section-Presentation{
+   
+    flex-direction: column;
+    height: auto;
+
+}
+
+main .Section-Presentation .Presentation-item-1{
+   display: none;
+}
+
+main .Section-Presentation .Presentation-item-2{
+    width: 100%;
+    height: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+main .Section-Services{
+    
+    height: auto;
+    padding: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+
+
+.Section-Services .Service-item-2 .Service-item-2-1{
+    height: 50%;
+}
+
+main .section-Realisations{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    gap: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+   
+}
+
+
+main .section-Realisations .Realisation-item-1{
+
+padding-top: 30px;
+padding-left: 0px;
+
+}
+
+main footer .footer-item-4{
+ display: none;
+}
+
+main footer .footer-item-3{
+  
+    display: none;
+}
+  }
+
+  /* ========Pour format Tablete=================== */
+
+  @media (min-width:601px) and (max-width:1024px){
+    main nav{
+    gap: 15rem;
+}
+
+main .Section-Presentation{
+    height: auto;
+    flex-direction: column;
+    padding: 0px;
+    gap: 30px;
+}
+
+main .Section-Presentation .Presentation-item-1{
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.021);
+    padding-left: 377px;
+    padding-right: 15px;
+    
+}
+
+main .Section-Presentation .Presentation-item-2{
+    width: 100%;
+    height: auto;
+}
+
+main .Section-Services{
+    height: auto;
+    padding: 2opx;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr fr;
+
+  }
+
+main .section-Realisations{
+    height: auto;
+    padding: 30px;
+    gap: 0rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+main .section-Realisations .Realisation-item-1{
+padding-top: 0px;
+padding-left: 0px;
+}
+
+main .section-Realisations .Realisation-item-2{
+padding-top: 0px;
+}
+
+main .section-Accueil .Button-Accueil-2{
+    width: 150px;
+    height: 35px; 
+    border-radius: 6px;  
+ 
+}
+
+main .section-Accueil .Button-Accueil-1{
+    width: 150px;
+    height: 35px; 
+    border-radius: 6px;  
+ 
+}
+  }
